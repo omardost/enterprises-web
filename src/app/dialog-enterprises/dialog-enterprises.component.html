@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Add Enterprises</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Phone</mat-label>
+        <input matInput [(ngModel)]="data.phone">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" (click)="save()">Save</button>
+</div>
